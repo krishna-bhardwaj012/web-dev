@@ -1,0 +1,16 @@
+body {
+    color: cadetblue;
+}
+
+ul{
+    font-size: 32px;
+    font-weight: 900;
+    font-family: cursive;
+    font-style: oblique;
+    font-display: swap;
+
+}
+
+button {
+    font-family: inherit;
+}
