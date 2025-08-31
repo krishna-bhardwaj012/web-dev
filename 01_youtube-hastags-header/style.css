@@ -12,6 +12,7 @@ body{
     background-position-x: 100%;
     background-position-y: -160px;
     background-repeat: no-repeat;
+
 }
 
 h1{
@@ -33,6 +34,12 @@ h1{
     vertical-align: middle;
 }
 
-img + img {
+img {
     margin-left: -1rem;
+
+}
+.images-container{
+    display: flex;
+    justify-self: flex-end;
+    flex-direction: row-reverse;
 }
