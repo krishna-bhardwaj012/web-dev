@@ -1,7 +1,13 @@
 body {
     margin:0;
+    font-family: 'Salsa', cursive;
 }
 
+
+.jhalar{
+    width: 200px;
+    margin-bottom: -190px;
+}
 
 .hero-section {
     min-height: 100vh;
@@ -11,9 +17,73 @@ body {
     background-repeat: no-repeat;
 }
 
+
+.paragraph-and-audio {
+    margin-left: 15rem;
+}
+
 .hero-section p {
     font-size: 46px;
     font-family: 'Salsa', cursive;
-    max-width: 400px;
-    margin-left: 15rem;
+    max-width: 550px;
 }
+
+
+audio::-webkit-media-controls-panel {
+     background-color: #FBD8A4;
+}
+
+.audio-container{
+    background-color: #FBD8A4;
+    max-width: max-content;
+    border-radius: 45px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+@media (max-width:  840px){
+    .first-deepak{
+        display: block;
+        margin-left: auto;
+    }
+
+    .second-deepak,
+    .soulful-music,
+    .playing-music-icon{
+        display: none;
+    }
+
+    .paragraph-and-audio{
+        margin-left: 1rem;
+        /* text-align: center; */
+    }
+    .jhalar{
+        margin-bottom: 0;
+    }
+    .hero-section p{
+        font-size: 32px;
+       
+    }
+    
+}
+
+@media (max-width: 540px){
+    .hero-section p{
+        font-size: 24px;
+    }
+
+    .first-deepak{
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+
+
+/* @media (width < 840px){
+    .second-deepak{
+        display: none;
+    }
+} */
