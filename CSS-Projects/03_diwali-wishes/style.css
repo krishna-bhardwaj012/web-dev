@@ -10,7 +10,7 @@ body {
 }
 
 .hero-section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* background-color: #F99501; */
     background-image: url(/CSS-Projects/03_diwali-wishes/images/orange-backdrop.png);
     background-size: cover;
@@ -24,7 +24,7 @@ body {
 
 .hero-section p {
     font-size: 46px;
-    font-family: 'Salsa', cursive;
+    /* font-family: 'Salsa', cursive; */
     max-width: 550px;
 }
 
