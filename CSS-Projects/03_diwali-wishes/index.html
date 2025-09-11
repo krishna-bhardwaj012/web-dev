@@ -21,7 +21,8 @@
       />
       <div class="paragraph-and-audio">
         <p>
-          Hi,<br />
+          Hi,<span id="receiver"></span>
+          <br />
           You mean the world to me... So this Diwali, I made something for you!
         </p>
         <div class="audio-container">
@@ -75,26 +76,58 @@
       </div>
       <div class="white-card-container">
         <div class="white-card">
-        <p>People say, “Diwali is the festival of lights.”</p>
-        <p>
-          On this Diwali, may Goddess Lakshmi bless your home with wealth, Lord
-          Ganesha remove obstacles from your life, and may your days be filled
-          with endless light. 🙏✨ Happy Deepavali!
-        </p>
-        <!-- <p>
+          <p>People say, “Diwali is the festival of lights.”</p>
+          <p>
+            On this Diwali, may Goddess Lakshmi bless your home with wealth,
+            Lord Ganesha remove obstacles from your life, and may your days be
+            filled with endless light. 🙏✨ Happy Deepavali!
+          </p>
+          <!-- <p>
           ✨ इस दिवाली माँ लक्ष्मी आपके घर को धन-समृद्धि से भर दें, भगवान गणेश
           आपके जीवन से सभी विघ्न बाधाएँ दूर करें, और आपके हर दिन में उजाले की
           किरणें फैलें। 🙏✨ आपको और आपके परिवार को हार्दिक शुभ दीपावली की
           शुभकामनाएँ! ✨
         </p> -->
+        </div>
+        <img
+          class="little-girl"
+          src="/CSS-Projects/03_diwali-wishes/images/little-girl 1.png"
+          alt="little-girl"
+        />
       </div>
-      <img class="little-girl" src="/CSS-Projects/03_diwali-wishes/images/little-girl 1.png" alt="little-girl">
+      <div class="horizontal-divider">
+        <div class="horizontal-line"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="horizontal-line"></div>
       </div>
       <div class="lakshmi-ganesha-card">
-        <img src="/CSS-Projects/03_diwali-wishes/images/lakshmi.png" alt="lakshmi">
-        <img src="/CSS-Projects/03_diwali-wishes/images/ganesh.png" alt="ganesh">
+        <img
+          src="/CSS-Projects/03_diwali-wishes/images/lakshmi.png"
+          alt="lakshmi"
+        />
+        <img
+          src="/CSS-Projects/03_diwali-wishes/images/ganesh.png"
+          alt="ganesh"
+        />
       </div>
+      <div class="thank-you-text">
+        <p>Happy Diwali and,</p>
+        <h2>Thanku For Everything...</h2>
+      </div>
+      <p class="my-name">Made with 💜 By <span id="sender"></span>></p>
     </section>
+
+    <script>
+      const receiverName = document.querySelector("#receiver");
+      const senderName = document.querySelector("#sender");
+      receiverName.innerText = new URLSearchParams(location.search).get(
+        "receiver"
+      );
+      senderName.innerText =
+        new URLSearchParams(location.search).get("sender") || "Krishna";
+    </script>
   </body>
 </html>
 

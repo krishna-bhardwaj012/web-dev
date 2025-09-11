@@ -1,3 +1,7 @@
+/* *{
+    box-sizing: border-box;
+} */
+
 body {
     margin:0;
     font-family: 'Salsa', cursive;
@@ -10,8 +14,6 @@ body {
 }
 
 .hero-section {
-    /* min-height: 100vh; */
-    /* background-color: #F99501; */
     background-image: url(/CSS-Projects/03_diwali-wishes/images/orange-backdrop.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,7 +26,6 @@ body {
 
 .hero-section p {
     font-size: 46px;
-    /* font-family: 'Salsa', cursive; */
     max-width: 550px;
 }
 
@@ -43,37 +44,9 @@ audio::-webkit-media-controls-panel {
     padding-left: 20px;
 }
 
-@media (max-width:  840px){
-    .first-deepak{
-        display: block;
-        margin-left: auto;
-    }
-
-    .second-deepak,
-    .soulful-music,
-    .playing-music-icon{
-        display: none;
-    }
-
-    .paragraph-and-audio{
-        margin-left: 1rem;
-        /* text-align: center; */
-    }
-    .jhalar{
-        margin-bottom: 0;
-    }
-    .hero-section p{
-        font-size: 32px;
-       
-    }
-    
-}
-
-
 .lakshmi-ganesha-section {
     background-color: #F99501;
-    padding-top: 1em;
-    /* display: flow-root */
+    padding-block: 1em;
     padding-inline: 1rem;
 }
 
@@ -90,7 +63,6 @@ audio::-webkit-media-controls-panel {
     gap: 12px;
     max-width: 800px;
     margin-inline: auto;
-    /* margin-top: 1rem; */
     margin-bottom: 2rem;
     
 }
@@ -120,6 +92,7 @@ audio::-webkit-media-controls-panel {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .white-card{
@@ -144,11 +117,30 @@ audio::-webkit-media-controls-panel {
     background-color: white;
     border-radius: 25px;
     padding: 4rem;
-    max-width: 900px;
+    max-width: 772px;
     display: flex;
+    margin-inline: auto;
 }
 
+.lakshmi-ganesha-card img{
+    width: 50%;
+}
 
+.thank-you-text{
+    max-width: 900px;
+    width: 100%;
+    margin-inline: auto;
+    
+}
+
+.thank-you-text h2{
+    text-align: left;
+}
+
+.my-name{
+    text-align: right;
+    font-size: 16px;
+}
 
 @media (width < 840px){
     .first-deepak{
@@ -182,6 +174,10 @@ audio::-webkit-media-controls-panel {
 .little-girl{
     width: 160px;
     
+}
+
+.lakshmi-ganesha-card{
+    padding: 2rem;
 }
 
 .white-card{
