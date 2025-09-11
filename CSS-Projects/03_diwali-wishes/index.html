@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Salsa&family=Style+Script&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section class="hero-section">
@@ -21,10 +21,11 @@
       />
       <div class="paragraph-and-audio">
         <p>
-          Hi,<span id="receiver"></span>
+          Hi, <span id="receiver"></span>
           <br />
           You mean the world to me... So this Diwali, I made something for you!
         </p>
+
         <div class="audio-container">
           <img
             src="./icons/music-icon.svg"
@@ -37,11 +38,12 @@
             alt="playing-music"
           />
           <audio
-            src="/CSS-Projects/03_diwali-wishes/music/Diwali-music.mp3"
+            src="./music/Diwali-music.mp3"
             controls
           ></audio>
         </div>
       </div>
+
       <img
         class="deepak first-deepak"
         src="./images/deepak.png"
@@ -53,6 +55,7 @@
         alt="deepak"
       />
     </section>
+
     <section class="lakshmi-ganesha-section">
       <div class="horizontal-divider">
         <div class="horizontal-line"></div>
@@ -61,12 +64,14 @@
         <div class="circle"></div>
         <div class="horizontal-line"></div>
       </div>
+
       <img
         class="lakshmi-ganesha-img"
-        src="./images/lakshmi maa and ganesh ji 1.png"
+        src="./images/lakshmi-ganesha-1.png"
         alt="lakshmi maa and ganesh ji"
       />
       <h2>Wishing You a Blessed and Prosperous Deepawali</h2>
+
       <div class="horizontal-divider">
         <div class="horizontal-line"></div>
         <div class="circle"></div>
@@ -74,6 +79,7 @@
         <div class="circle"></div>
         <div class="horizontal-line"></div>
       </div>
+
       <div class="white-card-container">
         <div class="white-card">
           <p>People say, “Diwali is the festival of lights.”</p>
@@ -82,19 +88,15 @@
             Lord Ganesha remove obstacles from your life, and may your days be
             filled with endless light. 🙏✨ Happy Deepavali!
           </p>
-          <!-- <p>
-          ✨ इस दिवाली माँ लक्ष्मी आपके घर को धन-समृद्धि से भर दें, भगवान गणेश
-          आपके जीवन से सभी विघ्न बाधाएँ दूर करें, और आपके हर दिन में उजाले की
-          किरणें फैलें। 🙏✨ आपको और आपके परिवार को हार्दिक शुभ दीपावली की
-          शुभकामनाएँ! ✨
-        </p> -->
         </div>
+
         <img
           class="little-girl"
-          src="/CSS-Projects/03_diwali-wishes/images/little-girl 1.png"
+          src="./images/little-girl.png"
           alt="little-girl"
         />
       </div>
+
       <div class="horizontal-divider">
         <div class="horizontal-line"></div>
         <div class="circle"></div>
@@ -102,6 +104,7 @@
         <div class="circle"></div>
         <div class="horizontal-line"></div>
       </div>
+
       <div class="lakshmi-ganesha-card">
         <img
           src="./images/lakshmi.png"
@@ -112,25 +115,29 @@
           alt="ganesh"
         />
       </div>
+
       <div class="thank-you-text">
         <p>Happy Diwali and,</p>
         <h2>Thanku For Everything...</h2>
       </div>
+
       <p class="my-name">Made with 💜 By Krishna Bhardwaj</p>
     </section>
 
     <script>
+      // safe DOM access to avoid errors if element not present
       const receiverName = document.querySelector("#receiver");
-      const senderName = document.querySelector("#sender");
-      receiverName.innerText = new URLSearchParams(location.search).get(
-        "receiver"
-      );
-      senderName.innerText =
-        new URLSearchParams(location.search).get("sender") || "Krishna";
+      const senderName = document.querySelector("#sender"); // if you want to show sender, add element with id="sender" in HTML
+
+      if (receiverName) {
+        const r = new URLSearchParams(location.search).get("receiver");
+        receiverName.innerText = r ? r : "";
+      }
+
+      if (senderName) {
+        const s = new URLSearchParams(location.search).get("sender");
+        senderName.innerText = s ? s : "Krishna";
+      }
     </script>
   </body>
 </html>
-
-<!-- git add . -->
-<!-- git commit -m "check" -->
-<!-- git push -->
