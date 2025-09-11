@@ -14,7 +14,7 @@ body {
 }
 
 .hero-section {
-    background-image: url(/CSS-Projects/03_diwali-wishes/images/orange-backdrop.png);
+    background-image: url(./images/orange-backdrop.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
