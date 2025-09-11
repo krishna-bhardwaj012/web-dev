@@ -69,6 +69,129 @@ audio::-webkit-media-controls-panel {
     
 }
 
+
+.lakshmi-ganesha-section {
+    background-color: #F99501;
+    padding-top: 1em;
+    /* display: flow-root */
+    padding-inline: 1rem;
+}
+
+.lakshmi-ganesha-img{
+    max-width: 900px;
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+}
+
+.horizontal-divider{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 800px;
+    margin-inline: auto;
+    /* margin-top: 1rem; */
+    margin-bottom: 2rem;
+    
+}
+
+.horizontal-line{
+    height: 2px;
+    background-color: #FBD8A4;
+    width: 468px; 
+}
+
+.circle{
+    height: 10px;
+    width: 10px;
+    background-color: #FBD8A4;
+    border-radius: 100%;
+    flex-shrink: 0;
+}
+
+.lakshmi-ganesha-section h2{
+    font-family: 'Style Script', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.white-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-card{
+    background-color: white;
+    max-width: 500px;
+    padding: 4rem;
+    border-radius: 25px;
+    
+}
+
+.white-card p{
+    font-size: 2rem;
+
+}
+
+.little-girl{
+    width: 260px;
+    margin-left: -5rem;
+}
+
+.lakshmi-ganesha-card{
+    background-color: white;
+    border-radius: 25px;
+    padding: 4rem;
+    max-width: 900px;
+    display: flex;
+}
+
+
+
+@media (width < 840px){
+    .first-deepak{
+        display: block;
+        margin-left: auto;
+    }
+    .second-deepak,
+    .soulful-music,
+    .playing-music-icon{
+        display: none;
+    }
+
+    .paragraph-and-audio{
+        margin-left: 1rem;
+        /* text-align: center; */
+    }
+    .jhalar{
+        margin-bottom: 0;
+    }
+
+    .hero-section p{
+        font-size: 32px;
+       
+    }
+
+    .white-card p{
+    font-size: 1.25rem;
+
+}
+
+.little-girl{
+    width: 160px;
+    
+}
+
+.white-card{
+    padding-block: 1rem;
+    padding-left: 2rem;
+}
+
+}
+
+
 @media (max-width: 540px){
     .hero-section p{
         font-size: 24px;
@@ -78,12 +201,12 @@ audio::-webkit-media-controls-panel {
         width: 100%;
         max-width: 280px;
     }
-}
-
-
-
-/* @media (width < 840px){
-    .second-deepak{
-        display: none;
+    .lakshmi-ganesha-section h2{
+        font-size: 32px; 
     }
-} */
+
+        .white-card p{
+    font-size: 1rem;
+
+}
+}
