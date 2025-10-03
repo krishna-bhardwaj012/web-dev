@@ -1,0 +1,12 @@
+img {
+    float: left;
+    margin-left: 0.71rem;
+    margin-right: 0.75rem;
+    width: 200px;
+    /* position: absolute; */
+}
+
+.first-paragraph{
+    background-color: lightcoral;
+    clear: left;
+}
