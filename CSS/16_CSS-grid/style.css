@@ -1,0 +1,23 @@
+.container{
+    background-color: lightblue;
+    min-height: 60vh;
+    display: grid;
+    /*repeate 4 times 100px*/
+    grid-template-columns: repeat(4, 100px) ;
+    /* grid-template-rows: 100px 100px 100px; */
+    grid-template-rows: repeat(3, 100px);
+}
+
+.box {
+    background-color: brown;
+    color: white;
+    font-size: 4rem;
+}
+
+.box-1 {
+    background-color: brown;
+}
+
+.box-2 {
+    background-color: cadetblue;
+}
