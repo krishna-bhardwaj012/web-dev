@@ -3,21 +3,37 @@
 }
 
 .container {
+    min-height: 60vh;
     background-color: lightblue;
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 1fr);
+
+    /* grid-template: repeat(6, 100px) / repeat(4, 100px); */
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: 100px;
+    grid-auto-rows: 100px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+        /* justify-items: center; */
+        
 }
+    
 
 .box {
     color: white;
     font-size: 4rem;
     padding: 1rem;
+    
 
 }
 
 .box-1 {
     background-color: brown;
-    
+    /* grid-column-start:5; */
+    /* grid-column-end: 5; */
+    /* grid-column:3/5;
+    grid-row: 2 / 4; */
 }
 
 
@@ -39,6 +55,11 @@
 
 .box-6 {
     background-color: darkgreen;
+    /* align-self: stretch;
+    justify-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .box-7 {
