@@ -1,17 +1,20 @@
+:root {
+    --primary-brand-color: #fa6400;
+    --secondary: #405cf5;
+    --rounded: 24px;
+}
+
 body {
     font-family: sans-serif;
     
 }
 
+
 * {
     box-sizing: border-box;
 }
 
-.first-container {
-    --primary-brand-color: #fa6400;
-    --secondary: #405cf5;
-    --rounded: 24px;
-}
+
 
 h2 {
     color: var(--secondary);
@@ -58,4 +61,8 @@ button {
 
 .next-button {
     background-color: var(--secondary);
+}
+
+h4 {
+    color: var(--secondary)
 }
