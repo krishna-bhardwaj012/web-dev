@@ -1,0 +1,73 @@
+li {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+
+
+
+.html{
+    color: red;
+}
+
+.css {
+    color: blue;
+}
+
+.javascript {
+    color: yellowgreen;
+}
+
+.react {
+    color: aqua;
+}
+
+.node {
+    color: #68A063;
+}
+
+
+/* #html {
+    font-size: 25px;
+}
+
+#css {
+    font-size: 25px;
+}
+
+#javascript {
+    font-size: 25px;
+}
+
+#react {
+    font-size: 25px;
+}
+
+#node {
+    font-size: 25px;
+} */
+
+
+[class] {
+    background-color: #215f1c;
+}
+
+[website] {
+    background-color: aqua;
+}
+
+.web p {                            
+    /* decendent selector */
+
+    background-color: brown;
+}
+
+
+h1:hover {
+    color: blueviolet;
+}
+
+.student:hover {
+    color:yellow;
+}
+

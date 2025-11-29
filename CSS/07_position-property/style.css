@@ -1,0 +1,51 @@
+
+
+div{
+    position: relative;
+    background-color: rgb(209, 135, 45);
+     /* inset: 5px; */
+
+}
+
+ul{
+    /* position: relative; */
+    background-color: brown;
+    height: 300px;
+    overflow-y: scroll;
+    margin-top: -100px;
+}
+
+
+
+
+.css-element{
+    background-color: blueviolet;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    right: 5px;
+    
+}
+
+
+.js-element{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    background-color: cadetblue;
+}
+
+.html-element{
+    /* position: sticky; */
+    background-color: darkkhaki;
+
+
+    /* top: 25px; */
+}
+
+header{
+    background-color: cornflowerblue;
+    position: sticky;
+    top: 0;
+}
