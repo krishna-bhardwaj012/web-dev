@@ -6,8 +6,9 @@
     min-height: 60vh;
     background-color: lightblue;
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, minmax(80px, 140px));
+    /* grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6, 1fr); */
 
     /* grid-template: repeat(6, 100px) / repeat(4, 100px); */
     /* grid-auto-flow: column; */

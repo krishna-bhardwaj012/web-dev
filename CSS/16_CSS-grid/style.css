@@ -2,22 +2,73 @@
     background-color: lightblue;
     min-height: 60vh;
     display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: repeat(5, 20%);
     /*repeate 4 times 100px*/
-    grid-template-columns: repeat(4, 100px) ;
+    /* grid-template-columns: repeat(4, 100px) ; */
+    /* column-gap: 20px; */
+    /* row-gap: 20px;  */
+    /* grid-template-columns: repeat(4, auto) ; */
     /* grid-template-rows: 100px 100px 100px; */
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
+    /* grid-template-rows: repeat(4, auto); */
 }
 
 .box {
     background-color: brown;
     color: white;
-    font-size: 4rem;
+    
 }
 
 .box-1 {
     background-color: brown;
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+    /* grid-column-start: span 2;
+    grid-row-start: span 2; */
+
+    grid-column-end: 4;
+    grid-row-end: 4;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
 }
 
 .box-2 {
     background-color: cadetblue;
+}
+
+.box-3 {
+    background-color: crimson;
+}
+
+.box-4 {
+    background-color: darkcyan;
+}
+
+.box-5 {
+    background-color: darkgoldenrod;
+}
+
+.box-6 {
+    background-color: darkgreen;
+}
+
+.box-7 {
+    background-color: darkmagenta;
+}
+
+.box-8 {
+    background-color: darkorange;
+}
+
+.box-9 {
+    background-color: darkred;
+}
+
+.box-10 {
+    background-color: darkslateblue;
 }

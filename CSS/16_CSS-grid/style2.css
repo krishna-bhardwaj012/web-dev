@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(5, 100px) ;
+    grid-template-rows: repeat(5, 100px) ;
+    /* column-gap: 20px; */
+    /* row-gap: 20px; */
+
+    /* gap: 10px ; */
+}
+
+.box {
+    color: white;
+    font-size: 4rem;
+    padding: 1rem;
+
+}
+
+.box-1 {
+    background-color: brown;
+    grid-column-start: 2;
+    grid-row-start: 5;
+    /* grid-column-end: 5; */
+    /* grid-row-end: 4; */
+}
+
+
+.box-2 {
+    background-color: cadetblue;
+}
+
+.box-3 {
+    background-color: crimson;
+}
+
+.box-4 {
+    background-color: darkcyan;
+}
+
+.box-5 {
+    background-color: darkgoldenrod;
+}
+
+.box-6 {
+    background-color: darkgreen;
+}
+
+.box-7 {
+    background-color: darkmagenta;
+}
+
+.box-8 {
+    background-color: darkorange;
+}
+
+.box-9 {
+    background-color: darkred;
+}
+
+.box-10 {
+    background-color: darkslateblue;
+}
